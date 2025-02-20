@@ -7,6 +7,7 @@ public class Empregado {
 	public Empregado(String nome, String sobrenome, double salario) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
+		if(salario > 0)
 		this.salario = salario;
 		
 	}
@@ -27,20 +28,12 @@ public class Empregado {
 	}
 
 	public double getSalario() {
-		
 		return salario;
 	}
-	
-	public double aumento() {
-		
-		salario *= 1.1;
-		
-		return salario;
-	}
-
 	public void setSalario(double salario) {
-
 		this.salario = salario;
 	}
+
+
 
 }
